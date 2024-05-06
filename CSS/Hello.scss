@@ -1,0 +1,116 @@
+/* Current Work\school Admin\CSS>sass --watch Hello.scss:my_style.css -t compact -c Spidey Gunnu */
+a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,command,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,sub,sup,table,tbody,tfoot,thead,th,tr,tdvideo,tt,u,ul,var{background:transparent;border:0 none;outline:0;}
+input:focus{outline:none}
+ol, ul {list-style:none;}
+blockquote, q {quotes:none;}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$srl1:#e8e8e8;
+$srl2:#fff;
+$imp:!important;
+$fn:'Roboto', sans-serif;
+$val:10px;
+$path:"../IMAGES/";
+$dbg:#f85a5a;
+@mixin bor($ed){border-radius: $ed}
+::-moz-selection {
+    color:#fff; 
+    background:#2f3539;
+}
+ 
+::selection {
+    color:#fff; 
+    background:#2f3539;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius:04px;
+	background-color:#2f3539;
+}
+::-webkit-scrollbar
+{
+	width:07px;
+	background-color:#2f3539 ;
+}
+::-webkit-scrollbar-thumb
+{
+	border-radius:04px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color:darken($srl1,30%);
+}
+body{margin:0px; padding:0px; font-family:$fn $imp;  line-height:18px; text-align:justify; font-size:13px !important; color:#000 !important; background:#fff; overflow-x:hidden; overflow-y: scroll /*user-select:none*/}
+tr,td{vertical-align:top; overflow:hidden;}
+ul,li{margin:0px; padding:0px; list-style:none}
+a{text-decoration:none; outline:none;}
+h1,h2,h3,h4,h5,h6,p{font-family:$fn $imp;}
+
+/*Responsive Module Variable*/
+$lg:1200px;
+$tab:992px;
+$pam:768px;
+$mob:567px;
+/* Login Form  */
+@mixin gut(){margin: 0px $imp; padding: 0 $imp;}
+@mixin cen(){display: table $imp; width: auto $imp; margin: 0px auto $imp; float: none $imp;}
+@mixin hd(){display: none $imp}
+@mixin bort($we){border-radius: $we}
+.login{background: url("#{$path}Quickway_login.jpg") no-repeat top center fixed; background-size: cover; position: fixed; display: block; width: 100% $imp; height: 100%;.col-xl-4{background: url("#{$path}sch_frm_bg.png");@include bort(07px); height: 350px; h1{color: $srl2; font-weight: 700; text-align: center; font-size: $val*2+5; text-transform: uppercase; letter-spacing: 01px;}input{background: url("#{$path}input_bg.png") repeat-x; border: 02px rgba(255,255,255,0.1) solid $imp; @include bort(07px); height:$val*4; color: $srl2; position: relative; padding-left: $val*3+5; margin-bottom: $val*2+8 $imp; font-size: $val+5;+img{position: absolute; top: 8px; left: 24px;}}}
+}
+
+
+
+
+/* Main Page */
+
+header{position: fixed; z-index: 999; width: 100%;
+	.col-xl-2:first-child{background: #191a1a; border-bottom: 0px;h1{color: $srl2; font-size: 20px;@include gut(); font-weight: 700; }}
+	.col-xl-4 , .col-xl-6{background:#fff; border-bottom: 01px #cccccc solid}
+	.col-xl-6{position: relative;a{position: absolute; left: -20px; top: 7px; z-index: 999999}ul{li{float: left; padding: 0px $val*2+8; position: relative;.badge{position: absolute; top: 09px; padding:04px $val; background: #191a1a $imp; left: 40px;}border-right: 01px #cccccc solid; height: 57px; display: flex;&:last-child{} img{align-self: center}}}}
+	.col-xl-4{&:last-child{.navbar{.navbar-nav .dropdown-menu{position: absolute $imp; top: 50px;}.dropdown-toggle:after{content: none $imp}a{color: #000 $imp; i{color: #000 $imp; position: relative; top: 5px; left: 05px;}}padding: 0 $imp; img{margin-right: $val - 4}li{a{font-weight: 700}padding: 0px $val*2;&:first-child{display: flex;i{align-self: center; color: #ccc; font-size: $val*2};}}}}}
+	}
+
+@media only screen and (max-width:1274px) and (min-width:992px){header{.col-xl-4{ul{margin: 0px $imp;}}}}
+
+.content{.left_panel{.le_srl{height: 610px; overflow-y: auto}position: fixed; background: #2f3539; width: 228px; float: left; height: 100%;transition: all 0.5s 0s ease-in-out; left: 0; top: 0; padding-top: 70px;.user_panel{h2{color: $srl2 $imp; font-size: $val+6}h3{color: $srl2 $imp; font-size: $val+2; margin-bottom: 03px $imp;+span{color: #959595;+span{color: #05be42}}}p{color: #8abe50 $imp; padding-top: 03px; @include gut();}}.nav{>li{background: #191a1a; line-height: 30px; border-bottom: 01px #292d30 solid; &:last-child{border: 0px;} a{color: #99abbc $imp; font-size: $val+6; font-weight: 500; img{margin-right: $val}}a[data-toggle="collapse"]{i{position: relative; right: -37%; font:{weight:700}}+div ul{background:#282929 $imp;li{background:#282929 $imp; border: 0px;a{color: $srl2 $imp; font-size: $val+4 $imp;&:before{content: url(../IMAGES/menu_ad.png); margin-right: 07px; padding-right:03px; }}}}}}}}
+	
+	.right_panel{padding-top: 70px $imp;position: relative; width: calc(100% - 228px);  float: right;background: #edecec; transition: all 0.5s 0s ease-in-out; right: 0; 
+		.d_text{background: #2f3539; padding: $val; -moz-box-shadow: 1px 0px 5px #c1c1c1;
+-webkit-box-shadow: 1px 0px 5px #c1c1c1;
+			box-shadow: 1px 0px 5px #c1c1c1; color:$srl2; font-size:$val*2+0;     letter-spacing: 1px; font-weight: 700}.d_bg{background: $srl2; padding: $val; border: 09px #e3e3e3 solid; img{margin-right: $val+5;+h1{font:{size:$val+9;}text-transform: uppercase; color: #7b7b7b;>small{color: #3498db; font-weight: 700; font-size: $val*2+5}}}margin-bottom: $val+5;}.bttn{@for $sa from 1 through 5{a:nth-child(#{$sa}){background: url("#{$path}ri0#{$sa}.png") no-repeat $srl2 05px 50%; padding: 10px 20px 10px 23px; font-size: $val+5; color: #6a6a6a; text-decoration: none; margin: 0px $val - 6}}}
+		#stuc{background: $srl2; table,tr,td,th{text-align: center; color: #797b7d; border-width: 0px 0px 01px 0px $imp;}th{background: #f0f9ff}}
+}}
+.add_on{.left_panel{left: -228px;}.right_panel{width: 100%}}
+.anim{transition: all 0.2s ease-in-out; transform: scaleY(1.2) rotate(0deg)}
+.animm{transform: rotate(90deg); transition: all 0.2s ease-in-out;}
+.borl{border-right: 05px #06a680 solid;transition: all 0.3s linear;}
+
+.bg01{background: url("#{$path}school-login.jpg") no-repeat top center; background-size: cover; min-height: 100%; position: fixed;
+	.frm1{background: url("#{$path}frm-src1.png") no-repeat; min-height: 157px;}
+	.frm2{background: $srl2 url("#{$path}frm-src3.png") no-repeat  center right; height: 350px; padding:$val+6; border-radius: 0px 0px 07px 07px; h1{color: #00376e; text-align: center; font-size: $val*2+5; padding-top: $val; font-weight: 700}
+		
+		input[type=text]{border: 0px; border-bottom: 01px #fb8c06 solid; border-radius: 0px; color: #000; background: transparent;&:focus{border: 0px; box-shadow: 0 0 0 0 transparent; border-bottom: 01px #fb8c06 solid;} margin-top: $val*4; font-size: 13px; padding: 0px;}
+			input[type=password]{border: 0px; border-bottom: 01px #fb8c06 solid; border-radius: 0px; color: #000; background: transparent;&:focus{border: 0px; box-shadow: 0 0 0 0 transparent; border-bottom: 01px #fb8c06 solid;} margin-top: $val*3; font-size: 13px; padding: 0px}
+		span{font-style:italic}
+		img{margin-top: $val*5; cursor: pointer}
+		width: 350px
+	}
+	.pp{width: auto; margin: 0px auto; display: table}
+	.pt-5{padding-top: $val*12 $imp}
+}
+
+
+@media only screen and(max-width:$lg){.right_panel{.d_bg{img{width: 30% $imp}}}header{.col-xl-4{.navbar{width:auto $imp;}.ml-5{margin: 0px $imp;}.navbar-toggler{position: relative $imp; top: 10px;}}}}
+
+@media only screen and (max-width:$tab){.content{.left_panel{left: -228px;}.right_panel{width: 100%}}.off_can{.left_panel{left: 0px;}.right_panel{width: calc(100% - 228px)}}
+
+}
+
+
+@media only screen and (max-width:$mob){.content{.left_panel{top: 0px $imp}.right_panel{top: 0px $imp}}header{.col-xl-6{ul{@include cen();+a{position: absolute $imp; left: 89%;  top: -40px;}}}.col-xl-4{.fixed-top{position: inherit $imp}}.col-xl-4{.pr-5{@include cen(); padding: 0px $imp}} }}
+
+@media only screen and (max-width:$pam){}
+
+@media only screen and (max-width:534px){.bttn{a{display: block $imp;  width: 150px; margin: 07px auto $imp}}}
+.sp_br{border-right: 01px #cccccc solid; margin-right: 8px; position: relative; left: -15px;}
+

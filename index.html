@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 maximum-scale=1"
+    />
+    <title>School Admin</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style_sheet.css" />
+    <script type="text/javascript" src="JS/my_script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-2 p-2 col-lg-2 col-sm-2 col-md-2">
+            <h1>School Logo</h1>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-sm-6 col-md-6 pl-3">
+            <ul>
+              <li>
+                <img src="IMAGES/bell.png" class="img-fluid" />
+                <span class="badge badge-danger">8</span>
+              </li>
+              <li>
+                <img src="IMAGES/ena.png" class="img-fluid" />
+                <span class="badge badge-danger">3</span>
+              </li>
+              <li>
+                <img src="IMAGES/noti.png" class="img-fluid" />
+                <span class="badge badge-danger">8</span>
+              </li>
+            </ul>
+            <a href="#" id="srl"
+              ><img src="IMAGES/slide_pan.png" class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-sm-4 col-md-4 pr-3">
+            <nav
+              class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"
+            >
+              <div
+                class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"
+              ></div>
+              <div class="pr-5">
+                <div class="navbar-menu-wrapper d-flex align-items-stretch">
+                  <ul class="navbar-nav">
+                    <li class="nav-item nav-profile dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        id="profileDropdown"
+                        href="#"
+                        data-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="nav-profile-text">
+                          <p class="mb-1 text-black">
+                            <img src="IMAGES/user.png" alt="image" />User Name
+                            <i class="fa fa-caret-down"></i>
+                          </p>
+                        </div>
+                      </a>
+                      <div
+                        class="dropdown-menu navbar-dropdown"
+                        aria-labelledby="profileDropdown"
+                      >
+                        <a class="dropdown-item" href="#"> Activity Log </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"> Signout </a>
+                      </div>
+                    </li>
+                  </ul>
+                  <button
+                    class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+                    type="button"
+                    data-toggle="offcanvas"
+                  >
+                    <span class="mdi mdi-menu"></span>
+                  </button>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="content d-block p-0">
+      <div class="left_panel">
+        <div class="le_srl">
+          <div class="user_panel p-3 pt-4 d-flex align-items-center">
+            <div class="col-5">
+              <img src="IMAGES/user_nm.png" class="img-fluid d-block p-0" />
+              <div class="clearfix"></div>
+            </div>
+            <div class="col-7 p-0">
+              <h2>User Name</h2>
+              <h3>Designation</h3>
+              <span>Status :</span> <span>Online</span>
+            </div>
+          </div>
+          <ul class="nav flex-column flex-nowrap">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="IMAGES/ic01.png" />
+                Dashboard</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link collapsed"
+                href="#submenu1"
+                data-toggle="collapse"
+                data-
+                ><img src="IMAGES/ic02.png" />Attendance
+                <i class="fa fa-angle-right anim" aria-hidden="true"></i
+              ></a>
+              <div class="collapse" id="submenu1" aria-expanded="false">
+                <ul class="flex-column pl-2 nav">
+                  <li class="nav-item">
+                    <a class="nav-link py-0" href="#">Menu Name</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link py-0" href="#">Menu Name</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link py-0" href="#">Menu Name</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link py-0" href="#">Menu Name</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img src="IMAGES/ic03.png" />Home Work</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img src="IMAGES/ic04.png" />Assignment</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img src="IMAGES/ic05.png" />Query</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="IMAGES/ic06.png" />News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img src="IMAGES/ic06.png" />Circular</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img src="IMAGES/ic06.png" />Change Password</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img src="IMAGES/ic06.png" />Log Out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right_panel p-3">
+        <div class="col-xl-12 col-lg-12 col-sm-12 col-md-12 p-0">
+          <div class="d_text p-3 mb-3 mt-4 mb-4">Dashboard</div>
+          <div class="pl-3 pr-3">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="d_bg d-flex align-items-center">
+                  <img src="IMAGES/rc01.png" class="img-fluid" />
+                  <h1>
+                    Attendance<br />
+                    <small>50</small>
+                  </h1>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="d_bg d-flex align-items-center">
+                  <img src="IMAGES/rc02.png" class="img-fluid" />
+                  <h1>
+                    Home Work<br />
+                    <small>100</small>
+                  </h1>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="d_bg d-flex align-items-center">
+                  <img src="IMAGES/rc03.png" class="img-fluid" />
+                  <h1>
+                    Assignment<br />
+                    <small>100</small>
+                  </h1>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="d_bg d-flex align-items-center">
+                  <img src="IMAGES/rc04.png" class="img-fluid" />
+                  <h1>
+                    Query<br />
+                    <small>100</small>
+                  </h1>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="d_bg d-flex align-items-center">
+                  <img src="IMAGES/rc05.png" class="img-fluid" />
+                  <h1>
+                    News<br />
+                    <small>100</small>
+                  </h1>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="d_bg d-flex align-items-center">
+                  <img src="IMAGES/rc06.png" class="img-fluid" />
+                  <h1>
+                    Circular<br />
+                    <small>100</small>
+                  </h1>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="d_bg d-flex align-items-center">
+                  <img src="IMAGES/rc07.png" class="img-fluid" />
+                  <h1>Change Password</h1>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="d_bg d-flex align-items-center">
+                  <img src="IMAGES/rc08.png" class="img-fluid" />
+                  <h1>Logout</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d_text p-3 mb-3 mt-4 mb-3">Add Home Work</div>
+          <div class="bttn mb-3">
+            <a href="">Add New</a>
+            <a href="">Copy File</a>
+            <a href="">Excel</a>
+            <a href="">PDF</a>
+            <a href="">Print</a>
+          </div>
+          <div id="stuc">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <th></th>
+                    <th>Student Name</th>
+                    <th>Home Work Title</th>
+                    <th>Start</th>
+                    <th>Finish</th>
+                    <th>Classes</th>
+                    <th>Status</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="IMAGES/fol.png" class="img-fluid" />
+                    </td>
+                    <td>Abhay Mishra</td>
+                    <td>SST</td>
+                    <td>01/07/2021</td>
+                    <td>10/08/2021</td>
+                    <td>X</td>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="IMAGES/fol.png" class="img-fluid" />
+                    </td>
+                    <td>Akshay Mishra</td>
+                    <td>SST</td>
+                    <td>01/07/2021</td>
+                    <td>10/08/2021</td>
+                    <td>IX</td>
+                    <td>Open</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
